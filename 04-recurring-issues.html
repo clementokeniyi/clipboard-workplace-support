@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Recurring issues — Last 30 days</title>
+<style>
+*{box-sizing:border-box} body{margin:0;background:#E2E8F0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1E293B}
+.page{width:1440px;height:900px;margin:0 auto;background:#F8FAFC;overflow:hidden}
+.top{height:58px;background:#1E293B;color:#fff;display:flex;align-items:center;padding:0 40px;gap:18px}
+.top b{font-size:20px}.top span{color:#CBD5E1;font-size:16px}.top .right{margin-left:auto;color:#E2E8F0;font-size:16px}
+.wrap{padding:20px 40px}
+h1{font-size:29px;margin:0 0 4px}.sub{font-size:17px;color:#64748B;margin:0 0 14px}
+.cols{display:flex;gap:24px}
+.left{flex:1}.right{width:560px;flex-shrink:0}
+.card{background:#fff;border:1px solid #E2E8F0;border-radius:14px;padding:16px 24px;margin-bottom:14px}
+.card h2{font-size:19px;margin:0 0 12px}
+.bar{margin-bottom:7px}.bar:last-child{margin-bottom:0}
+.bar .lab{display:flex;justify-content:space-between;font-size:16px;font-weight:700;margin-bottom:4px}
+.bar .lab span:last-child{color:#475569}
+.track{height:18px;background:#F1F5F9;border-radius:999px;overflow:hidden}
+.fill{height:100%;border-radius:999px}
+.c1{background:#0E7490}.c2{background:#334155}.c3{background:#94A3B8}
+table{width:100%;border-collapse:collapse;font-size:16px}
+th{text-align:left;color:#64748B;font-size:15px;padding:6px 8px 9px;border-bottom:1px solid #E2E8F0}
+td{padding:9px 8px;border-bottom:1px solid #F1F5F9;vertical-align:top;line-height:1.35}
+tr:last-child td{border-bottom:0}
+.total{font-size:17px;font-weight:800;margin-top:12px}
+.kpi{display:flex;gap:16px;margin-bottom:14px}
+.kpi div{flex:1;background:#fff;border:1px solid #E2E8F0;border-radius:12px;padding:10px 18px}
+.kpi b{font-size:24px;display:block}.kpi span{color:#64748B;font-size:15px}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top"><b>Support Workspace</b><span>Reports &nbsp;›&nbsp; Recurring issues</span><span class="right">Last 30 days</span></div>
+  <div class="wrap">
+    <h1>Recurring issues — last 30 days</h1>
+    <p class="sub">September 24 – October 23, 2026 &nbsp;•&nbsp; Tickets by Issue Category and Issue Subtype</p>
+
+    <div class="kpi">
+      <div><b>105</b><span>Total tickets</span></div>
+      <div><b>42</b><span>Shift</span></div>
+      <div><b>36</b><span>Payment</span></div>
+      <div><b>27</b><span>Platform</span></div>
+    </div>
+
+    <div class="cols">
+      <div class="left">
+        <div class="card">
+          <h2>Tickets by category</h2>
+          <div class="bar"><div class="lab"><span>Shift</span><span>42</span></div><div class="track"><div class="fill c1" style="width:100%"></div></div></div>
+          <div class="bar"><div class="lab"><span>Payment</span><span>36</span></div><div class="track"><div class="fill c2" style="width:86%"></div></div></div>
+          <div class="bar"><div class="lab"><span>Platform</span><span>27</span></div><div class="track"><div class="fill c3" style="width:64%"></div></div></div>
+        </div>
+        <div class="card" style="margin-bottom:0">
+          <h2>Tickets by subtype</h2>
+          <div class="bar"><div class="lab"><span>No-show</span><span>24</span></div><div class="track"><div class="fill c1" style="width:100%"></div></div></div>
+          <div class="bar"><div class="lab"><span>Invoice mismatch</span><span>21</span></div><div class="track"><div class="fill c1" style="width:88%"></div></div></div>
+          <div class="bar"><div class="lab"><span>Shift posting</span><span>18</span></div><div class="track"><div class="fill c2" style="width:75%"></div></div></div>
+          <div class="bar"><div class="lab"><span>Login</span><span>16</span></div><div class="track"><div class="fill c2" style="width:67%"></div></div></div>
+          <div class="bar"><div class="lab"><span>Timesheet dispute</span><span>15</span></div><div class="track"><div class="fill c3" style="width:63%"></div></div></div>
+          <div class="bar"><div class="lab"><span>Account change</span><span>11</span></div><div class="track"><div class="fill c3" style="width:46%"></div></div></div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="card" style="margin-bottom:0">
+          <h2>Root causes and recommended fixes</h2>
+          <table>
+            <tr><th>Issue</th><th>Root cause</th><th>Recommended fix</th></tr>
+            <tr><td><b>No-show</b></td><td>Late cancellations with no cover confirmed</td><td>Confirm cover before the shift starts; follow up the same day</td></tr>
+            <tr><td><b>Invoice mismatch</b></td><td>Hours billed before timesheets were approved</td><td>Hold invoices until timesheets are approved</td></tr>
+            <tr><td><b>Shift posting</b></td><td>Same-day posts missing required details</td><td>Required-field check before a post goes live</td></tr>
+            <tr><td><b>Login</b></td><td>Repeated password resets after account changes</td><td>Clear reset guide at first login help reply</td></tr>
+          </table>
+          <div class="total">Top pattern: Shift issues are 40% of volume — cover confirmation is the first fix.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

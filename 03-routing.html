@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Tickets by assignee group</title>
+<style>
+*{box-sizing:border-box} body{margin:0;background:#E2E8F0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1E293B}
+.page{width:1440px;height:900px;margin:0 auto;background:#F8FAFC;overflow:hidden}
+.top{height:64px;background:#1E293B;color:#fff;display:flex;align-items:center;padding:0 40px;gap:18px}
+.top b{font-size:20px}.top span{color:#CBD5E1;font-size:16px}.top .right{margin-left:auto;color:#E2E8F0;font-size:16px}
+.wrap{padding:26px 40px}
+h1{font-size:30px;margin:0 0 6px}.sub{font-size:17px;color:#64748B;margin:0 0 22px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 24px}
+.group{background:#fff;border:1px solid #E2E8F0;border-radius:14px;padding:18px 20px 14px}
+.group h2{font-size:19px;margin:0 0 4px;display:flex;justify-content:space-between}
+.group h2 span{font-size:15px;color:#64748B;font-weight:600}
+.group p{font-size:15px;color:#64748B;margin:0 0 12px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th{text-align:left;color:#64748B;font-size:14px;padding:6px 6px 8px;border-bottom:1px solid #E2E8F0}
+td{padding:10px 6px;border-bottom:1px solid #F1F5F9;vertical-align:top;line-height:1.35}
+tr:last-child td{border-bottom:0}
+.pill{display:inline-block;font-weight:700;border-radius:999px;padding:4px 10px;font-size:14px;background:#E2E8F0}
+.pill.high{background:#FEE2E2;color:#991B1B}.pill.norm{background:#E0F2FE;color:#075985}
+.tag{color:#475569;font-size:14px}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top"><b>Support Workspace</b><span>Tickets &nbsp;›&nbsp; By group</span><span class="right">October 21–23, 2026</span></div>
+  <div class="wrap">
+    <h1>Tickets by assignee group</h1>
+    <p class="sub">Routing: Payment → Billing &nbsp;•&nbsp; Account change → Account Management &nbsp;•&nbsp; No-show → Worker Operations &nbsp;•&nbsp; Critical → High priority, tagged urgent &nbsp;•&nbsp; All other tickets → Workplace Support</p>
+    <div class="grid">
+
+      <div class="group">
+        <h2>Billing <span>2 open</span></h2>
+        <p>Payment issues and invoice reviews</p>
+        <table>
+          <tr><th>Ticket</th><th>Facility / Issue</th><th>Tags</th><th>Priority</th><th>Assignee</th></tr>
+          <tr><td><b>#18468</b></td><td><b>Riverside Senior Living</b><br>Invoice mismatch — INV-20931</td><td class="tag">payment<br>invoice-mismatch</td><td><span class="pill norm">Normal</span></td><td>Sara Kim</td></tr>
+          <tr><td><b>#18471</b></td><td><b>Lakeside Health Center</b><br>Timesheet dispute</td><td class="tag">payment<br>timesheet-dispute</td><td><span class="pill norm">Normal</span></td><td>Sara Kim</td></tr>
+        </table>
+      </div>
+
+      <div class="group">
+        <h2>Account Management <span>2 open</span></h2>
+        <p>Account changes and facility access</p>
+        <table>
+          <tr><th>Ticket</th><th>Facility / Issue</th><th>Tags</th><th>Priority</th><th>Assignee</th></tr>
+          <tr><td><b>#18455</b></td><td><b>Brookfield Assisted Living</b><br>Account change</td><td class="tag">platform<br>account-change</td><td><span class="pill norm">Normal</span></td><td>Daniel Reyes</td></tr>
+          <tr><td><b>#18460</b></td><td><b>Cedar Hills Nursing</b><br>Account change</td><td class="tag">platform<br>account-change</td><td><span class="pill norm">Normal</span></td><td>Daniel Reyes</td></tr>
+        </table>
+      </div>
+
+      <div class="group">
+        <h2>Worker Operations <span>2 open</span></h2>
+        <p>No-show follow-up and cover</p>
+        <table>
+          <tr><th>Ticket</th><th>Facility / Issue</th><th>Tags</th><th>Priority</th><th>Assignee</th></tr>
+          <tr><td><b>#18472</b></td><td><b>Northfield Care Center</b><br>No-show — SH-48213</td><td class="tag">urgent<br>no-show</td><td><span class="pill high">High</span></td><td>Maya Chen</td></tr>
+          <tr><td><b>#18479</b></td><td><b>Pine Valley Care Home</b><br>No-show — SH-48229</td><td class="tag">urgent<br>no-show</td><td><span class="pill high">High</span></td><td>Maya Chen</td></tr>
+        </table>
+      </div>
+
+      <div class="group">
+        <h2>Workplace Support <span>2 open</span></h2>
+        <p>Shift, posting and login help</p>
+        <table>
+          <tr><th>Ticket</th><th>Facility / Issue</th><th>Tags</th><th>Priority</th><th>Assignee</th></tr>
+          <tr><td><b>#18481</b></td><td><b>Maple Grove Rehab</b><br>Shift posting — SH-48247</td><td class="tag">shift<br>shift-posting</td><td><span class="pill norm">Normal</span></td><td>Alex Morgan</td></tr>
+          <tr><td><b>#18483</b></td><td><b>Willow Creek Senior Care</b><br>Login help</td><td class="tag">platform<br>login</td><td><span class="pill norm">Normal</span></td><td>Alex Morgan</td></tr>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

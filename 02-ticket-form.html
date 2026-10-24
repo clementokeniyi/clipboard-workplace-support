@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>New ticket — Payment Issue</title>
+<style>
+*{box-sizing:border-box} body{margin:0;background:#E2E8F0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1E293B}
+.page{width:1440px;height:900px;margin:0 auto;background:#F8FAFC;overflow:hidden}
+.top{height:64px;background:#1E293B;color:#fff;display:flex;align-items:center;padding:0 40px;gap:18px}
+.top b{font-size:20px}.top span{color:#CBD5E1;font-size:16px}.top .right{margin-left:auto;color:#E2E8F0;font-size:16px}
+.wrap{padding:24px 40px;display:flex;gap:28px}
+.main{flex:1;background:#fff;border:1px solid #E2E8F0;border-radius:16px;padding:26px 36px}
+.side{width:380px;flex-shrink:0}
+h1{font-size:32px;margin:0 0 6px}.sub{font-size:17px;color:#64748B;margin:0 0 26px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 28px}
+label{display:block;font-size:16px;font-weight:700;margin-bottom:8px;color:#334155}
+.field{border:1px solid #CBD5E1;border-radius:10px;padding:15px 16px;font-size:18px;background:#fff;min-height:54px}
+.field.select{display:flex;justify-content:space-between;align-items:center}
+.field.select span{color:#64748B}
+.full{grid-column:1 / -1}
+textarea{width:100%;border:1px solid #CBD5E1;border-radius:10px;padding:15px 16px;font-size:18px;line-height:1.5;font-family:inherit;resize:none;height:118px}
+.btnrow{display:flex;gap:14px;margin-top:26px}
+.btn{background:#0E7490;color:#fff;border:0;border-radius:10px;padding:15px 34px;font-size:18px;font-weight:700}
+.btn2{background:#fff;color:#334155;border:1px solid #CBD5E1;border-radius:10px;padding:15px 26px;font-size:18px;font-weight:700}
+.card{background:#fff;border:1px solid #E2E8F0;border-radius:14px;padding:22px 24px;margin-bottom:16px}
+.card h2{font-size:19px;margin:0 0 12px}.card p{font-size:16px;line-height:1.55;color:#475569;margin:0 0 10px}
+.row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #F1F5F9;font-size:16px}
+.row:last-child{border-bottom:0}.row b{text-align:right}
+.pill{display:inline-block;background:#FEF3C7;color:#92400E;font-weight:700;border-radius:999px;padding:6px 12px;font-size:15px}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top"><b>Support Workspace</b><span>New ticket &nbsp;›&nbsp; Payment Issue</span><span class="right">October 21, 2026</span></div>
+  <div class="wrap">
+    <div class="main">
+      <h1>Payment Issue</h1>
+      <p class="sub">Facility billing and timesheet questions — routed to Billing on submit.</p>
+      <div class="grid">
+        <div><label>Facility Name</label><div class="field">Riverside Senior Living</div></div>
+        <div><label>Shift ID</label><div class="field">SH-48107</div></div>
+        <div><label>Issue Category</label><div class="field select"><span>Payment</span><span>▾</span></div></div>
+        <div><label>Issue Subtype</label><div class="field select"><span>Invoice mismatch</span><span>▾</span></div></div>
+        <div><label>Urgency</label><div class="field select"><span>Time-sensitive</span><span>▾</span></div></div>
+        <div><label>Worker Name</label><div class="field">Marcus Hale</div></div>
+        <div class="full"><label>Invoice Number</label><div class="field">INV-20931</div></div>
+        <div class="full"><label>Description</label><textarea readonly>Invoice INV-20931 for October 1–15, 2026 shows 164 hours. Verified timesheets total 152 hours — a difference of 12 hours. Please issue a corrected invoice.</textarea></div>
+      </div>
+      <div class="btnrow"><button class="btn">Submit ticket</button><button class="btn2">Save as draft</button></div>
+    </div>
+    <div class="side">
+      <div class="card">
+        <h2>What happens next</h2>
+        <p>Payment issues go to <b>Billing</b> for a timesheet and invoice review.</p>
+        <p>Time-sensitive cases are reviewed before the next billing run.</p>
+        <span class="pill">Routing: Billing</span>
+      </div>
+      <div class="card">
+        <h2>Hours at a glance</h2>
+        <div class="row"><span>Billed hours</span><b>164 hours</b></div>
+        <div class="row"><span>Verified hours</span><b>152 hours</b></div>
+        <div class="row"><span>Difference</span><b>12 hours</b></div>
+        <div class="row"><span>Billing period</span><b>Oct 1–15, 2026</b></div>
+      </div>
+      <div class="card">
+        <h2>Contact</h2>
+        <p>Facility contact for Riverside Senior Living will receive the corrected invoice and a written summary of the change.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
