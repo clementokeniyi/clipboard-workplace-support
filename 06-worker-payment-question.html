@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Ticket #18518 — Payment question, Jordan Blake</title>
+<style>
+*{box-sizing:border-box} body{margin:0;background:#E2E8F0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1E293B}
+.page{width:1440px;height:900px;margin:0 auto;background:#F8FAFC;overflow:hidden}
+.top{height:58px;background:#1E293B;color:#fff;display:flex;align-items:center;padding:0 40px;gap:18px}
+.top b{font-size:20px}.top span{color:#CBD5E1;font-size:16px}.top .right{margin-left:auto;color:#E2E8F0;font-size:16px}
+.wrap{display:flex;gap:24px;padding:20px 40px}
+.col{flex:1;min-width:0}
+h1{font-size:28px;line-height:1.15;margin:0 0 6px}
+.sub{font-size:16px;color:#64748B;margin:0 0 16px}
+.card{background:#fff;border:1px solid #E2E8F0;border-radius:14px;padding:20px 24px;margin-bottom:14px}
+.card h2{font-size:19px;margin:0 0 12px}
+label{display:block;font-size:15px;font-weight:700;margin-bottom:6px;color:#334155}
+.field{border:1px solid #CBD5E1;border-radius:10px;padding:12px 14px;font-size:17px;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
+.row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #F1F5F9;font-size:16px}
+.row:last-child{border-bottom:0}.row b{text-align:right}
+.row.diff b{color:#991B1B}
+p{font-size:16px;line-height:1.5;margin:0 0 10px}p:last-child{margin-bottom:0}
+.who{display:flex;justify-content:space-between;margin-bottom:8px}
+.who b{font-size:17px}.who span{font-size:15px;color:#64748B}
+.note{background:#FFFBEB;border:1px solid #FDE68A;border-left:6px solid #D97706}
+.note h2{font-size:17px;margin:0 0 8px;color:#92400E}
+.note p{font-size:15px}
+.esc{background:#0E7490;color:#fff;border-radius:12px;padding:16px 20px}
+.esc h2{font-size:18px;margin:0 0 8px;color:#fff}
+.esc p{color:#ECFEFF;font-size:15px;line-height:1.45}
+.pill{display:inline-block;font-weight:700;border-radius:999px;padding:5px 11px;font-size:14px;background:#FEF3C7;color:#92400E}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top"><b>Support Workspace</b><span>Tickets &nbsp;›&nbsp; #18518</span><span class="right">October 20, 2026 &nbsp;•&nbsp; Email</span></div>
+  <div class="wrap">
+    <div class="col">
+      <h1>Payment question — Jordan Blake</h1>
+      <p class="sub">Ticket form, with the amounts checked before replying.</p>
+      <div class="card" style="margin-bottom:0">
+        <h2>Ticket form</h2>
+        <div class="grid">
+          <div><label>Professional</label><div class="field">Jordan Blake, CNA</div></div>
+          <div><label>Shift ID</label><div class="field">SH-48298</div></div>
+          <div><label>Issue Category</label><div class="field">Payment</div></div>
+          <div><label>Issue Subtype</label><div class="field">Short payment</div></div>
+          <div><label>Facility</label><div class="field">Pine Valley Care Home</div></div>
+          <div><label>Urgency</label><div class="field">Time-sensitive</div></div>
+        </div>
+        <div class="row"><span>Scheduled time</span><b>8 hours 50 minutes</b></div>
+        <div class="row"><span>Hourly rate</span><b>$20.00 / hour</b></div>
+        <div class="row"><span>Expected payment</span><b>$176.67</b></div>
+        <div class="row"><span>Payment shown</span><b>$160.00 (8 hours)</b></div>
+        <div class="row diff"><span>Difference</span><b>$16.67</b></div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="who"><div><b>Jordan Blake</b></div><span>Oct 20, 2026 • 9:14 AM</span></div>
+        <p>Hi, my payment for SH-48298 looks short. I worked 8 hours 50 minutes, but I was paid for 8 hours only. Can you check this, please?</p>
+      </div>
+      <div class="card note">
+        <h2>Investigation note — timesheet vs payment</h2>
+        <p><b>Timesheet:</b> 8 hours 50 minutes, Oct 18, Pine Valley Care Home, SH-48298.</p>
+        <p><b>Payment:</b> $160.00, calculated on 8 hours only. The 50 minutes were not included.</p>
+        <p style="margin-bottom:0"><b>Finding:</b> $176.67 expected − $160.00 paid = <b>$16.67 missing</b>.</p>
+      </div>
+      <div class="card" style="margin-bottom:14px">
+        <div class="who"><div><b>Reply — Priya Sharma, Support Specialist</b></div><span>Oct 20 • 10:02 AM</span></div>
+        <p>Hi Jordan, thank you for flagging this. You are right — your timesheet shows 8 hours 50 minutes, and the payment only covered 8 hours. I have sent the full breakdown to Payments/Billing for a $16.67 correction, and I will update you as soon as it is confirmed.</p>
+      </div>
+      <div class="esc">
+        <h2>Escalated to Payments / Billing <span class="pill" style="margin-left:8px">All details included</span></h2>
+        <p>Worker: Jordan Blake, CNA · Facility: Pine Valley Care Home · Shift: SH-48298, Oct 18 · Scheduled: 8h 50m at $20/hr · Expected: $176.67 · Paid: $160.00 · Difference: $16.67 · Timesheet: 8h 50m, payment: 8h only.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
